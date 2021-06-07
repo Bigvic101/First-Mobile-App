@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title></title>
+  <link rel="stylesheet" href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
+  <script type="text/javascript" src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery2.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body style="background-color: white;" class="bg-danger text-info">
+  <div class="bg-success text-center">
+    <p style="font-size: 20px;  padding-bottom: 10px">
+      Mini-(Calc)
+    </p>
+  </div>
+  <div class="container-fluid">
+    <div class="login">
+      <div class="header">
+        <div class="logo text-center">
+          <img style="width: 15%;" src="img/True.jpeg">
+        </div>
+      </div>
+      <div class="body">
+        <div class="loginForm">
+          <h3>Login</h3>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control password" placeholder="Password" />
+            </div>
+            <div class="form-group">
+              <button type="button" class="form-control btn btn-warning loginBtn">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="text-center">
+          <p>
+            <a class="text-danger gotoreg">Forgot Password?</a>
+          </p>
+          <p>
+            <a class="text-success gotoreg">Create New Account?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="register">
+      <div class="header text-center">
+        <img style="width: 15%;" src="img/True.jpeg">
+      </div>
+      <div class="body">
+        <div class="loginForm">
+          <h3>Register</h3>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control fullname" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control phone" placeholder="Phone" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control regemail" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control regpassword" placeholder="Password" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control password1" placeholder="Confirm password" />
+            </div>
+            <div class="form-group">
+              <button type="button" class="form-control btn btn-success regBtn">
+                Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="text-center">
+          <p>
+            <a class="text-danger gotologin">Already Registered?</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid regSuccess">
+    <p>Successfully Registered, Click here to continue</p>
+    <button type="button" class="btn-danger gotologin">Login</button>
+  </div>
+  <div class="dashboard">
+    <h3>
+      Welcome,
+      <span class="user"></span>
+    </h3>
+    <button type="button" class="btn btn-success logOutBtn">Log Out</button>
+    <br />
+    <br />
+    <br />
+    <div class="container">
+      <div class="row">
+        <div style="color: aqua;" class="col-xs-6 text-center btn-muted viewUsers">
+          <div class="icon">
+            <h1 class="glyphicon glyphicon-user"></h1>
+          </div>
+          <div class="">
+            <p>View all Users</p>
+          </div>
+        </div>
+        <div style="color: aqua;" class="col-xs-6 text-center btn-muted viewProfile">
+          <div class="icon">
+            <h1 class="glyphicon glyphicon-ok-sign"></h1>
+          </div>
+          <div class="">
+            <p>My Calculator</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div style="color: aqua;" class="col-xs-6 text-center btn-muted viewSettings">
+          <div class="icon">
+            <h1 class="glyphicon glyphicon-export"></h1>
+          </div>
+          <div class="">
+            <p>My Converter</p>
+          </div>
+        </div>
+        <div style="color: aqua;" class="col-xs-6 text-center btn-secondary viewContact">
+          <div class="icon">
+            <h1 class="glyphicon glyphicon-phone"></h1>
+          </div>
+          <div class="">
+            <p>Contact here</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid dashboardMenuViews">
+    <button type="button" class="btn btn-danger dashboardBackBtn">
+      Back
+    </button>
+    <h3></h3>
+    <div class="allUsers container-fluid">
+      <h3></h3>
+    </div>
+    <div class="myCalculator">
+      <p style="padding-left: 20%; font-weight: bold;">Do some calculations here</p>
+      <div style="padding-left: 20%;" class="calculatorCard">
+
+        <input style="width: 189px; border-radius: 4px; height: 50px;" type="text" class="calculatorScreen z-depth-5"
+          value="" disabled />
+        </br>
+        </br>
+        <div class="calculatorKeys">
+
+          <button style="margin-left: 1px; font-weight: bold;" type="button" class="numoper btn btn-info"
+            value="+">+</button>
+          <button style="margin-left: 1px; font-weight: bold;" type="button" class="numoper btn btn-info"
+            value="-">-</button>
+          <button style="margin-left: 1px; font-weight: bold;" type="button" class="numoper btn btn-info"
+            value="*">&times;</button>
+          <button style="margin-left: 1px; font-weight: bold;" type="button" class="numoper btn btn-info"
+            value="/">&divide;</button>
+          <button style="margin-left: 1px; font-weight: bold;" type="button" class="numoper btn btn-success"
+            value="=">=</button>
+          </br>
+          </br>
+          <button style="font-weight: bold;" type="button" value="9"
+            class="numoper btn btn-light waves-effect">9</button>
+          <button style="font-weight: bold;" type="button" value="8"
+            class="numoper btn btn-light waves-effect">8</button>
+          <button style="font-weight: bold;" type="button" value="7"
+            class="numoper btn btn-light waves-effect">7</button>
+          <button style="font-weight: bold;" type="button" value="6"
+            class="numoper btn btn-light waves-effect">6</button>
+          <button style="font-weight: bold;" type="button" value="5"
+            class="numoper btn btn-light waves-effect">5</button>
+          </br>
+          </br>
+          <button style="font-weight: bold;" type="button" value="4"
+            class="numoper btn btn-light waves-effect">4</button>
+          <button style="font-weight: bold;" type="button" value="3"
+            class="numoper btn btn-light waves-effect">3</button>
+          <button style="font-weight: bold;" type="button" value="2"
+            class="numoper btn btn-light waves-effect">2</button>
+          <button style="font-weight: bold;" type="button" value="1"
+            class="numoper btn light waves-effect one">1</button>
+          <button style="font-weight: bold;" type="button" value="0"
+            class="numoper btn btn-light waves-effect">0</button>
+          </br>
+          </br>
+          <button style="width: 62px; text-align: center; font-weight: bold;" type="button"
+            class="numoper btn btn-danger btn-sm" value="C">C</button>
+          <button style="font-weight: bold;" type="button" class="numoper btn btn-secondary" value=".">.</button>
+          <button style="font-weight: bold;" type="button" class="numoper btn btn-info" value="sqrt()">&#8730;</button>
+          <button style="font-weight: bold;" type="button" class="numoper btn btn-info" value="**">exp</button>
+        </div>
+      </div>
+    </div>
+    <div class="currencyConverter">
+      <p style="font-weight: bold;">Mini Currency Converter</p>
+      <input placeholder="Input amount in Naira"
+        style="border-radius: 10px;font-weight: bold; width: 189px; border-radius: 4px; height: 50px;" type="text"
+        class="naira" id="naira" />
+      <button style="border-radius: 10px;" type="button" class="btn btn-light waves-effect convert ">Validate </button>
+      <div class="popup">
+        <span class="popuptext" id="myPopup">Validated, Select currency and click convert</span>
+      </div>
+      <br />
+      <br />
+      <li style="list-style: none; width: 80%; border-radius: 10px;">
+        <select class="convert" id="convert" style="width: 80%;">
+          <option value="0">Select Currency</option>
+          <option value="1">US Dollar(USD)</option>
+          <option value="2">Euro(EUR)</option>
+          <option value="3">Japanese Yen(JPN)</option>
+          <option value="4">Great British Pound(GBP)</option>
+          <option value="5">Australian Dollar(AUD)</option>
+        </select>
+      </li>
+      <br />
+      <input style="width: 189px; font-weight: bold; border-radius: 4px; height: 50px;" type="text" class="cv"
+        id="cv12" />
+      <button style="border-radius: 10px;" type="button" class="btn btn-light waves-effect validate ">Convert </button>
+    </div>
+    <div class="contact">
+      <div class="container-fluid bg-primary">
+        <div class="padToporBottom">
+          <h4 style="text-align: center;">Contact Us</h4>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Petrong</h4>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong><span class="glyphicon glyphicon-map-marker"></span> Address:</strong>
+                <p>1, Eshowogafor Street, Alaso</p>
+              </li>
+              <li class="list-group-item">
+                <strong><span class="glyphicon glyphicon-phone"></span> Phone:</strong>
+                <p>09091909194</p>
+              </li>
+              <li class="list-group-item">
+                <strong><span class="glyphicon glyphicon-envelope"></span> Email:</strong>
+                <p>toniadegboye16@gmail.com</p>
+              </li>
+              <li class="list-group-item">
+                <strong><span class="glyphicon glyphicon-globe"></span> Website:</strong>
+                <p>www.petrongsoftwaresolutions.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="padToporBottom">
+              <div class="container-fluid bg-info">
+                <h3>Get in Touch</h3>
+              </div>
+              <form role="form">
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-user"></span>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Full Name">
+                </div>
+                <div class="formpad"></div>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-envelope"></span>
+                  </span>
+                  <input type="text" class="form-control" placeholder="Email">
+                </div>
+                <div class="formpad"></div>
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <span class="glyphicon glyphicon-edit"></span>
+                  </span>
+                  <textarea class="form-control" placeholder="Write to Us"></textarea>
+                </div>
+                <div class="formpad"></div>
+                <div class="form-group">
+                  <button type="button" class="form-control btn btn-success">Send <span
+                      class="glyphicon glyphicon-chevron-right"></span></button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="update">
+      <div class="header">
+        <div class="logo">My App Logo</div>
+      </div>
+      <div class="body">
+        <div class="loginForm">
+          <br />
+          <button type="button" class="btn btn-danger updateback">Back</button>
+          <h3>Update</h3>
+          <hr />
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control fullname" placeholder="Full Name" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control phone" placeholder="Phone" />
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control email" placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control regpassword" placeholder="Password" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control password1" placeholder="Confirm password" />
+            </div>
+            <div class="form-group">
+              <button type="button" class="form-control btn btn-success editBtn">
+                Save Changes
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
